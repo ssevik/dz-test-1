@@ -5,7 +5,7 @@ body {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 2%;
+  /* letter-spacing: 2%; */
   background-color: #ffffff;
 }
 
@@ -400,7 +400,6 @@ img {
 
 .sect-four-list-item:hover .overlay {
   transform: translateY(0%);
-  /* transition: transform 500ms; */
 }
 
 .overlay-parent-sec-four:hover,
@@ -642,6 +641,7 @@ img {
   border-radius: 4px;
   width: 360px;
   height: 40px;
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -658,7 +658,7 @@ img {
   position: relative;
 }
 
-.review-form-field-icon {
+.review-form-icon {
   position: absolute;
   left: 16px;
   top: 50%;
@@ -667,20 +667,11 @@ img {
 }
 
 .review-form-input:focus {
-  border: 1px solid #4d5ae5;
-  border-radius: 4px;
-  outline: transparent;
+  border-color: #4d5ae5;
 }
 
-.review-form-input:focus + .review-form-field-icon {
+.review-form-input:focus + .review-form-icon {
   fill: #4d5ae5;
-}
-
-.review-form-input-wraper:focus-within {
-  border: 1px solid #4d5ae5;
-  border-radius: 4px;
-  width: 360px;
-  height: 40px;
 }
 
 .review-form-masage {
